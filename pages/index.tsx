@@ -3,13 +3,13 @@ import Head from 'next/head';
 
 const Home: NextPage = () => {
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center py-2'>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home | Sourabh Kheraliya</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='flex w-full flex-1 flex-col items-center justify-center px-20 text-center'>
-        <h1 className='text-3xl font-bold'>ॐ नमः शिवाय</h1>
+      <main className='text-center'>
+        <h1 className='text-2xl font-bold'>Home</h1>
       </main>
     </div>
   );
