@@ -6,10 +6,14 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Home | Sourabh Kheraliya</title>
-        <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='text-center'>
-        <h1 className='text-2xl font-bold'>Home</h1>
+      <main>
+        <p className='py-4'>
+          Hellew 👋🏻 , I'am{' '}
+          <span className='font-medium'>Sourabh Kheraliya</span> an aspiring
+          full stack developer and tech enthusiast. When I'am not coding you can
+          find me playing PC games 🎮 and listening to music 🎵.
+        </p>
       </main>
     </div>
   );

@@ -4,6 +4,6 @@ type Props = {
 
 export const Layout = ({ children }: Props) => {
   return (
-    <div className='container max-w-4xl mx-auto my-8 px-4 py-8'>{children}</div>
+    <div className='container max-w-xl mx-auto my-8 px-4 py-4'>{children}</div>
   );
 };
