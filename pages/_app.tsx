@@ -1,7 +1,8 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { Layout, Navbar } from 'components';
 import Head from 'next/head';
+
+import { Footer, Layout, Navbar } from 'components';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Head>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </>
     </Layout>
   );
