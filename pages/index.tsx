@@ -1,16 +1,22 @@
 import Head from 'next/head';
 import type { NextPage } from 'next';
-import { getFeaturedProjects } from 'lib';
-import { ProjectCard } from 'components';
-import { Project } from 'types';
+
+import { getFeaturedBlogs, getFeaturedProjects } from 'lib';
+import { BlogCard, ProjectCard } from 'components';
+import { Blog, Project } from 'types';
 
 type Props = {
   featuredProjects: Project[];
+  featuredBlogs: Blog[];
 };
 
-const Home: NextPage<Props> = ({ featuredProjects }: Props) => {
+const Home: NextPage<Props> = ({ featuredProjects, featuredBlogs }: Props) => {
   const featuredProjectsListing = featuredProjects.map((project) => (
     <ProjectCard key={project.id} project={project} />
+  ));
+
+  const featuredBlogsListing = featuredBlogs.map((blog) => (
+    <BlogCard key={blog.id} blog={blog} />
   ));
 
   return (
@@ -29,6 +35,8 @@ const Home: NextPage<Props> = ({ featuredProjects }: Props) => {
       <main>
         <h2 className='text-lg font-semibold py-4'>Featured Projects</h2>
         {featuredProjectsListing}
+        <h2 className='text-lg font-semibold py-4'>Featured Blogs</h2>
+        {featuredBlogsListing}
       </main>
     </div>
   );
@@ -38,9 +46,11 @@ export default Home;
 
 export const getStaticProps = async () => {
   const featuredProjects = await getFeaturedProjects();
+  const featuredBlogs = await getFeaturedBlogs();
   return {
     props: {
       featuredProjects,
+      featuredBlogs,
     },
   };
 };

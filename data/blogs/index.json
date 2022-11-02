@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": "1",
+      "title": "Understanding how map, filter and reduce works",
+      "publishedOn": "Aug 2, 2021",
+      "duration": "7 min",
+      "introduction": "Introduction In development, we daily face situations in which we have to make calculations based on the content of an array or object in javascript....",
+      "source": "https://sourabhkheraliya.hashnode.dev/understanding-how-map-filter-and-reduce-works"
+    },
+    {
+      "id": "2",
+      "title": "Code splitting in your vanillaJS app",
+      "publishedOn": "Aug 7, 2021",
+      "duration": "4 min",
+      "introduction": "ES6 introduced a way to easily share code among multiple javascript files. This involves - Exporting parts of a javascript file for use in other one...",
+      "source": "https://sourabhkheraliya.hashnode.dev/code-splitting-in-your-vanillajs-app"
+    },
+    {
+      "id": "3",
+      "title": "Event Delegation in JS",
+      "publishedOn": "May 14, 2022",
+      "duration": "7 min",
+      "introduction": "Introduction Event delegation is a technique for handling events in javascript. In this technique instead of applying event listeners to the...",
+      "source": "https://sourabhkheraliya.hashnode.dev/event-delegation-in-js"
+    }
+  ]
+}
