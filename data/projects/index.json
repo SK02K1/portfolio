@@ -1,0 +1,115 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "🌈 ShareMoment",
+      "description": "social media app",
+      "features": [
+        "Create a Post (text-based post), Edit Post, Delete Post",
+        "User and Explore feed",
+        "Sort by - trending, oldest and latest",
+        "Follow/Unfollow users",
+        "Bookmark Post(Save Post) and Delete Bookmark",
+        "Like/Unlike and Comments",
+        "Authentication (Sign-up, Login & Logout)",
+        "Edit User Profile (Bio, Portfolio URL, Profile Pic)"
+      ],
+      "technologies": ["ReactJS", "Redux-Toolkit", "Chakra-UI", "Mock-backend"],
+      "links": {
+        "hosted": "https://sharemoment.netlify.app/",
+        "sourceCode": "https://github.com/SK02K1/Social-Media"
+      }
+    },
+    {
+      "id": "2",
+      "name": "📺 Focus TV",
+      "description": "video library app",
+      "features": [
+        "Homepage with featured categories, Video Listing Page & Single",
+        "Video Page",
+        "History, Playlists, Likes & Watch Later Management",
+        "Authentication (Sign-up, Login & Logout)",
+        "Search Video",
+        "Filter Videos with Category",
+        "Fully Responsive"
+      ],
+      "technologies": [
+        "ReactJS",
+        "Context-API",
+        "React-router-v6",
+        "Mock-backend"
+      ],
+      "links": {
+        "hosted": "https://focustv.netlify.app/",
+        "sourceCode": "https://github.com/SK02K1/Video-Library"
+      }
+    },
+    {
+      "id": "3",
+      "name": "🛒 Focus Store",
+      "description": "e-commerce app",
+      "features": [
+        "Homepage, Product listing page, Single Product Page",
+        "Filters by - Price, Category & Ratings",
+        "Cart Management",
+        "Wishlist Management",
+        "Authentication (Sign-up, Login & Logout)",
+        "User Profile Page",
+        "Fully Responsive"
+      ],
+      "technologies": [
+        "ReactJS",
+        "Context-API",
+        "React-router-v6",
+        "Mock-backend"
+      ],
+      "links": {
+        "hosted": "https://focus-store-react.netlify.app/",
+        "sourceCode": "https://github.com/SK02K1/E-Commerce"
+      }
+    },
+    {
+      "id": "4",
+      "name": "💡 Quizzz",
+      "description": "quiz app",
+      "features": [
+        "Home Page, Quizzes by Category, Rules Page while attempting Quiz",
+        "MCQ based Quiz Question Page",
+        "Result Page with Answers & Score",
+        "Timer for question page",
+        "User Profile Page",
+        "Fully Responsive & Theme Toggle",
+        "Authentication (Sign-up, Login & Logout)"
+      ],
+      "technologies": [
+        "ReactJS",
+        "Context-API",
+        "React-router-v6",
+        "Firebase-v9"
+      ],
+      "links": {
+        "hosted": "https://quizzz-react.netlify.app/",
+        "sourceCode": "https://github.com/SK02K1/Quiz-App"
+      }
+    },
+    {
+      "id": "5",
+      "name": "🌞 Focus-UI",
+      "description": "component library",
+      "features": [
+        "Home Page, Quizzes by Category, Rules Page while attempting Quiz",
+        "MCQ based Quiz Question Page",
+        "Result Page with Answers & Score",
+        "Timer for question page",
+        "User Profile Page",
+        "Fully Responsive & Theme Toggle",
+        "Authentication (Sign-up, Login & Logout)"
+      ],
+      "technologies": ["HTML", "CSS", "JS"],
+      "links": {
+        "hosted": "https://focus-ui.netlify.app/",
+        "sourceCode": "https://github.com/SK02K1/Focus-UI"
+      }
+    }
+  ]
+}

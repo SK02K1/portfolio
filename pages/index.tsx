@@ -1,18 +1,56 @@
-import type { NextPage } from 'next';
 import Head from 'next/head';
+import type { NextPage } from 'next';
 
-const Home: NextPage = () => {
+import { getFeaturedBlogs, getFeaturedProjects } from 'lib';
+import { BlogCard, ProjectCard } from 'components';
+import { Blog, Project } from 'types';
+
+type Props = {
+  featuredProjects: Project[];
+  featuredBlogs: Blog[];
+};
+
+const Home: NextPage<Props> = ({ featuredProjects, featuredBlogs }: Props) => {
+  const featuredProjectsListing = featuredProjects.map((project) => (
+    <ProjectCard key={project.id} project={project} />
+  ));
+
+  const featuredBlogsListing = featuredBlogs.map((blog) => (
+    <BlogCard key={blog.id} blog={blog} />
+  ));
+
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center py-2'>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Home | Sourabh Kheraliya</title>
       </Head>
-      <main className='flex w-full flex-1 flex-col items-center justify-center px-20 text-center'>
-        <h1 className='text-3xl font-bold'>ॐ नमः शिवाय</h1>
+      <header>
+        <p className='py-4'>
+          Hellew 👋🏻 , I'am{' '}
+          <span className='font-medium'>Sourabh Kheraliya</span> an aspiring
+          full stack developer and tech enthusiast. When I'am not coding you can
+          find me playing PC games 🎮 and listening to music 🎵.
+        </p>
+      </header>
+      <main>
+        <h2 className='text-lg font-semibold py-4'>Featured Projects</h2>
+        {featuredProjectsListing}
+        <h2 className='text-lg font-semibold py-4'>Featured Blogs</h2>
+        {featuredBlogsListing}
       </main>
     </div>
   );
 };
 
 export default Home;
+
+export const getStaticProps = async () => {
+  const featuredProjects = await getFeaturedProjects();
+  const featuredBlogs = await getFeaturedBlogs();
+  return {
+    props: {
+      featuredProjects,
+      featuredBlogs,
+    },
+  };
+};
